@@ -9,7 +9,7 @@ const Certificate = ({ CertificateRef }) => {
   const certificates = [
     "certificate image/imarticus_fsd.png",
     "certificate image/Metainnovix_intern.png",
-    "certificate image/javainter.jpg",
+    "certificate image/Javainter.jpg",
     "certificate image/javascript_inter.jpg",
     "certificate image/php.jpg",
     "certificate image/SQL.jpg",
