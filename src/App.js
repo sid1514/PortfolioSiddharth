@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef } from "react";
+import "./App.css";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import ContactMe from "./components/ContactMe";
+import Certificate from "./components/Certificate";
 
 function App() {
+  const projectRef = useRef(null);
+  const ExperienceRef = useRef(null);
+  const SkillsRef = useRef(null);
+  const CertificateRef = useRef(null);
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Home
+        projectRef={projectRef}
+        scrollToSection={scrollToSection}
+        ExperienceRef={ExperienceRef}
+        SkillsRef={SkillsRef}
+        CertificateRef={CertificateRef}
+      />
+      <div className="bg-gradient-to-b from-neutral-950 from-via-neutral-800 to-neutral-700 text-white h-full space-y-16">
+        <Projects projectRef={projectRef} className="bg-neutral-900" />
+
+        <Experience ExperienceRef={ExperienceRef} />
+
+        <Skills SkillsRef={SkillsRef} />
+
+        <Certificate CertificateRef={CertificateRef} />
+        <ContactMe />
+      </div>
+    </>
   );
 }
 

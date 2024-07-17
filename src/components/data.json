@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Turbo trader",
+    "description": "This is car dealer-company project which provides user to authorization, search cars and book for test drive.",
+    "pic": "turbotrader.png",
+    "gitlink":"https://github.com/sid1514/web_project.git",
+    "demo":"https://turbotraders.onrender.com"
+  },
+  {
+    "id": 2,
+    "name": "Chat App",
+    "description": "This is real time chat app project which provides user to authorization and authentication, search for users, chat with them and also chat with group features.",
+    "pic": "chatApp1.png",
+    "gitlink":"https://github.com/sid1514/ChatApp.git",
+    "demo":"https://chatapp-q54g.onrender.com"
+  },
+  {
+    "id": 3,
+    "name": "Todo List",
+    "description": "This is a task listing app where user can add new task and also can delete and edit that tasks.",
+    "pic": "todo.png",
+    "gitlink": "https://github.com/sid1514/TodoList.git",
+    "demo": ""
+  },
+  {
+    "id": 4,
+    "name": "Weather App",
+    "description": "a basic weather app used api's for giving real time weather situations like temperature,humidity etc and also provide search, suggestion and open in new tab feature.",
+    "pic": "weather.png",
+    "gitlink": "https://github.com/sid1514/WeatherApp.git",
+    "demo": "https://weatherapp-3t5g.onrender.com"
+  }
+]
