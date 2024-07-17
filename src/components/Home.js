@@ -57,7 +57,7 @@ const Home = ({
               openMenu ? " flex flex-col " : "hidden"
             }  md:flex md:flex-row w-1/2`}
           >
-            <span className="flex flex-row md:mt-0 mt-10 ">
+            <span className="flex flex-row md:mt-2 mt-10 ">
               <a
                 href={mailtoLink}
                 target="_blank"
@@ -107,7 +107,7 @@ const Home = ({
                 href="https://drive.google.com/file/d/1ZzEmAigCMtvth-lIEgci4n28M3_NcV7X/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                size="medium"
+                size="small"
               >
                 Resume
               </Button>
@@ -151,7 +151,7 @@ const Home = ({
               className="transform transition-transform duration-500 "
             />
             {showMore ? (
-              <div className="text-right p-4 flex flex-col">
+              <div className="text-right p-4 flex flex-col ">
                 <p
                   className={`font-bold font-mono transition-opacity duration-500 ${
                     showParagraphs[0] ? "opacity-100" : "opacity-0"
@@ -167,7 +167,7 @@ const Home = ({
                   <Qualification />
                 </p>
                 <p
-                  className={`font-bold font-mono transition-opacity duration-1500 ${
+                  className={`tracking-wide text-xl font-bold font-mono transition-opacity duration-1500 ${
                     showParagraphs[2] ? "opacity-100" : "opacity-0"
                   }`}
                   onClick={() => scrollToSection(CertificateRef)}
@@ -178,9 +178,9 @@ const Home = ({
             ) : null}
           </div>
         </div>
-        <div className="justify-center w-full text-center flex flex-col md:flex-row md:flex align-center pt-16">
+        <div className="justify-center md:w-full text-center flex flex-col md:flex-row md:flex align-center pt-16">
           <div
-            className="overflow-hidden md:w-10/12 bg-gradient-to-r from-neutral-900/25 from-10% via-neutral-500 via-30% to-neutral-400/25 to-90% rounded-full md:flex justify-between place-center"
+            className="overflow-hidden md:w-10/12 bg-gradient-to-r from-neutral-900/25 from-10% md:via-neutral-500 via-neutral-700 via-30% to-neutral-400/25 to-90% rounded-full md:flex md:flex-row flex flex-col justify-between place-center"
             style={{
               boxShadow: "1px 1px 4px rgba(0, 0, 0, 0.7)",
               alignItems: "center",
@@ -190,10 +190,10 @@ const Home = ({
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               transition={{ duration: 2 }}
-              className="z-0 md:absolute right-[25%] absolute top-[15%]  md:top-[40%] bgText bg-neutral-800/25 p-1 md:p-8 rounded-2xl md:text-3xl "
+              className="z-0 md:absolute right-[20%] absolute top-[10%]  md:top-[44%] bgText bg-neutral-800/25 p-1 md:p-8 rounded-2xl text-3xl "
             >
               <p
-                className="bgText bg-neutral-800/25 p-1 md:p-8 rounded-2xl md:text-2xl flex"
+                className="bgText bg-neutral-800/25 p-1 md:p-8 rounded-2xl text-2xl flex"
                 style={{ textShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)" }}
               >
                 {text}
@@ -204,10 +204,9 @@ const Home = ({
               src="me.png"
               alt="Sliding"
               initial={{ x: "-100%" }}
-              
               animate={{ x: 0 }}
               transition={{ duration: 2 }}
-              className=" object-cover md:w-auto w-1/3 image_filter"
+              className="md:mt-0 mt-14 object-cover md:w-auto md:w-1/3 w-2/3 image_filter"
             />
           </div>
         </div>

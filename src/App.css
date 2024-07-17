@@ -42,7 +42,10 @@ flex-direction: column;
     left:11.5vw;
     justify-content: space-evenly;
   }
-  
+  .textarea1{
+    width: 50vw;
+    height: 10vh;
+  }
 }
 
 

@@ -15,10 +15,12 @@ const Qualification = () => {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<p className=" font-bold font-mono"> Qualification</p>}
+      trigger={
+        <p className="tracking-wide font-bold font-mono text-xl"> Qualification</p>
+      }
       size="small"
     >
-      <div className="p-4 bg-gradient-to-r from-neutral-900 to-stone-700 text-white ">
+      <div className="tracking-wide p-4 bg-gradient-to-r from-neutral-900 to-stone-700 text-white ">
         <div className="m-10">
           <ModalHeader>
             <h3 className="font-bold underline underline-offset-4 pb-2">
