@@ -21,7 +21,7 @@
     "description": "This is a task listing app where user can add new task and also can delete and edit that tasks.",
     "pic": "todo.png",
     "gitlink": "https://github.com/sid1514/TodoList.git",
-    "demo": ""
+    "demo": "https://todolist-sid.onrender.com/"
   },
   {
     "id": 4,
