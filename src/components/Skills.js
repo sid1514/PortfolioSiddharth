@@ -14,7 +14,7 @@ const Skills = ({ SkillsRef }) => {
           <div className=" space-x-10">
             <h4 className="m-auto p-5 w-44 ">Frontend skills</h4>
 
-            <div className=" flex justify-center h-1/4">
+            <div className=" flex justify-center h-1/4 space-x-4">
               <span className="">
                 <Icon name="html5" size="big" color="teal" />
                 <p>HTML</p>
@@ -26,6 +26,10 @@ const Skills = ({ SkillsRef }) => {
               <span>
                 <Icon name="js square" size="big" color="orange" />
                 <p>JAVASCRIPT</p>
+              </span>
+              <span className="flex flex-col justify-center">
+                <img src="reactlogo.png" alt="react" width={30} height={30}/>
+                <label>REACT JS</label>
               </span>
             </div>
           </div>
