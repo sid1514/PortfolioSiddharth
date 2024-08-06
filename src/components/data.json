@@ -18,7 +18,7 @@
     "name": "Chat App",
     "description": "This is real time chat app project which provides user to authorization and authentication, search for users, chat with them and also chat with group features.",
     "pic": "chatApp1.png",
-    "gitlink": "https://github.com/sid1514/ChatApp.git",
+    "gitlink": "https://github.com/sid1514/ChitChatAppSid.git",
     "demo": "https://chit-chat-app-sid.vercel.app/",
     "skills": [
       { "name": "React", "icon": "reactlogo.png" },
