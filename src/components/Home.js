@@ -141,14 +141,14 @@ const Home = ({
             </h6>
           </div>
 
-          <div className="fixed right-1 md:w-1/3 text-right justify-center ">
+          <div className="fixed right-10 md:w-1/3 text-right justify-center ">
             <Icon
               name="add"
               size="big"
               color="white"
               onClick={handleclickMore}
               style={{ transform: `rotate(${rotation}deg)` }}
-              className="transform transition-transform duration-500 "
+              className="transform transition-transform duration-500 pr-4"
             />
             {showMore ? (
               <div className="text-right p-4 flex flex-col ">
