@@ -23,7 +23,7 @@ const Projects = ({ projectRef }) => {
               <span className="flex space-x-3 ml-10 align-center">
                 {p.skills.map((s) => (
                   <span className="flex flex-col">
-                    <img src={s.icon} width={28} height={25} />
+                    <img src={s.icon} width={28} height={25} alt="p.name"/>
                     <lable>{s.name}</lable>
                   </span>
                 ))}
