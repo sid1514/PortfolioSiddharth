@@ -30,6 +30,19 @@
   },
   {
     "id": 3,
+    "name": "Spotify clone",
+    "description": "a spotify desktop web player clone in which i design user-interface of spotify and implemented spotify user-authentication and playlists by using Spotify APIs.",
+    "pic": "spotify1.png",
+    "gitlink": "https://github.com/sid1514/Spotify_clone.git",
+    "demo": "https://spotify-clone-sid.vercel.app/",
+    "skills": [
+      { "name": "React", "icon": "reactlogo.png" },
+
+      { "name": "Tailwind ", "icon": "tailwindcss.png" }
+    ]
+  },
+  {
+    "id": 4,
     "name": "Todo List",
     "description": "This is a task listing app where user can add new task and also can delete and edit that tasks.",
     "pic": "todo.png",
@@ -44,7 +57,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Weather App",
     "description": "a basic weather app used api's for giving real time weather situations like temperature,humidity etc and also provide search, suggestion and open in new tab feature.",
     "pic": "weather.png",
