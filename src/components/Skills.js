@@ -3,9 +3,9 @@ import { Icon } from "semantic-ui-react";
 
 const Skills = ({ SkillsRef }) => {
   const skillFontSize = { fontSize: "0.8rem" };
-  const skillImage = " w-12 h-10";
+  const skillImage = " w-12 h-8 md:h-10";
   const skillSectionCss =
-    " flex justify-center md:h-1/4 md:space-x-4 space-x-2";
+    " flex justify-center md:h-1/4 md:space-x-4 space-x-2 py-2";
   return (
     <div className=" p-5">
       <h3 className="md:ml-20 underline underline-offset-4 font-mono text-sky-400">
@@ -67,7 +67,7 @@ const Skills = ({ SkillsRef }) => {
                 />
                 <p style={skillFontSize}>EXPRESS JS</p>
               </span>
-              <span className="flex flex-col pt-3">
+              <span className="flex flex-col ">
                 <Icon name="node js" size="big" />
                 <label style={skillFontSize}>NODE JS</label>
               </span>
@@ -108,7 +108,7 @@ const Skills = ({ SkillsRef }) => {
                 />
                 <label style={skillFontSize}>JAVA</label>
               </span>
-              <span className="flex flex-col pt-3">
+              <span className="flex flex-col ">
                 <Icon name="python" size="big" color="yellow" />
                 <label style={skillFontSize}>PYTHON</label>
               </span>
