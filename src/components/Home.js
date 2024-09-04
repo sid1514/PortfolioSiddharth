@@ -34,11 +34,11 @@ const Home = ({
       "I turn ideas into interactive web experiences.",
       "Dive in to see my creations in action",
     ],
-    loop: {},
+    loop: true, // Changed to `true` for infinite loop
   });
 
   const handleClickMore = () => {
-    setShowMore((prev) => !prev);
+    setShowMore(!showMore); // Corrected logic
     setRotation((prev) => prev + 45);
 
     if (!showMore) {
@@ -52,19 +52,22 @@ const Home = ({
   };
 
   const toggleMenu = () => {
-    setOpenMenu((prev) => !prev);
+    setOpenMenu(!openMenu);
   };
 
   return (
-    <section className="font-mono bg-img p-10 bg-neutral-950 w-full text-white bg-gradient-to-r from-neutral-950 to-neutral-500 md:h-screen h-8/12">
-      <div className="fixed h-24 flex flex-col md:flex-row md:space-x-10">
+    <section className="font-mono bg-img p-10 bg-neutral-950 w-full text-white bg-gradient-to-r from-neutral-950 to-neutral-500 h-8/12">
+      <div
+        className=" h-24 flex flex-col md:flex-row md:space-x-10"
+        id="nav-component"
+      >
         <div className="absolute ListNav" onClick={toggleMenu}>
           <Icon name="list" size="big" />
         </div>
 
         <div
           className={`${
-            openMenu ? "flex flex-col md:flex-row w-1/2" : "hidden md:flex"
+            openMenu ? "flex flex-col md:flex-row w-1/5 " : "hidden md:flex md:block"
           }`}
         >
           <span className="flex flex-row md:mt-2 mt-10">
@@ -110,11 +113,11 @@ const Home = ({
               />
             </a>
           </span>
-          <span className="resumeBt z-50 flex bg-transparent rounded-full w-1/4 md:h-10 ml-6">
+          <span className="resumeBt z-50 flex bg-transparent rounded-full w-1/4 md:h-10 ml-4 mt-10 md:mt-0">
             <Button
               inverted
               color="white"
-              href="https://drive.google.com/file/d/1ESnQ9g3fQZsFt59SGfuuJjWQMDYx4MLd/view?usp=sharing"
+              href="https://drive.google.com/file/d/16G508DXI0TwdikyYPfxhFKw8pfDtDS_8/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               size="small"
@@ -127,7 +130,7 @@ const Home = ({
         <div
           className={`${
             openMenu
-              ? "EPSbt w-1/3 space-x-4 flex"
+              ? "EPSbt w-1/3 space-x-4 mt-10 ml-10 md:flex md:ml-0 md:mt-0"
               : "hidden md:flex md:w-1/2 md:space-x-24"
           } mt-0 text-center`}
         >
